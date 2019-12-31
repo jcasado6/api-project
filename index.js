@@ -9,7 +9,7 @@ const Breweries = require('./lib/models/Breweries')
 app.use(parser.json());
 app.use(cors())
 
-breweriesRoutes.route('/').get((req, res) => {
+breweriesRoutes.route('/breweries').get((req, res) => {
     Breweries.find((err, Breweries) => {
         if (err) {
             console.log(err);
@@ -60,12 +60,12 @@ breweriesRoutes.route('/update/:id').post((req, res) => {
 });
 
 
-// app.listen(8080, () => console.log('listening'))
-app.set("port", process.env.PORT || 8080);
+app.listen(8080, () => console.log('listening'))
+// app.set("port", process.env.PORT || 8080);
 
-app.listen(app.get("port"), () => {
-  console.log(`✅ PORT: ${app.get("port")} 🌟`);
-});
+// app.listen(app.get("port"), () => {
+//   console.log(`✅ PORT: ${app.get("port")} 🌟`);
+// });
 
 app.use('/breweries', breweriesRoutes)
 
