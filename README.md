@@ -9,7 +9,7 @@
 ## Description & Features
 The Brewery Tracker API contains information about breweries in the Washington DC area. Each object contains information on the name, the type of brewery, the address, and the brewery's phone number.
 
-This project was to build a JSON API from the ground up. The API is comprised of a JSON file with raw data (from [here](https://www.openbrewerydb.org/)).
+This project was to build a JSON API from the ground up. The API is comprised of a JSON file with raw data from [here](https://www.openbrewerydb.org/).
 
 ## Example
 This is an example object from the API:
