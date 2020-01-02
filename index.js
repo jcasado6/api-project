@@ -69,4 +69,6 @@ app.listen(app.get("port"), () => {
 
 app.use('/breweries', breweriesRoutes)
 
-// heroku config:set DB_URL="mongodb+srv://jcasado6:jcasado6@cluster0-jix1s.mongodb.net/test?retryWrites=true&w=majority"
+// heroku config:set DB_URL="mongodb+srv://jcasado6:admin@cluster0-jix1s.mongodb.net/test?retryWrites=true&w=majority"
+
+// heroku config:set DB_URL="mongodb+srv://jcasado6:admin@cluster0-jix1s.mongodb.net/test?retryWrites=true&w=majority"
