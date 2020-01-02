@@ -9,7 +9,7 @@ const Breweries = require('./lib/models/Breweries')
 app.use(parser.json());
 app.use(cors())
 
-breweriesRoutes.route('/breweries').get((req, res) => {
+breweriesRoutes.route('/').get((req, res) => {
     Breweries.find((err, Breweries) => {
         if (err) {
             console.log(err);
@@ -69,3 +69,4 @@ app.listen(app.get("port"), () => {
 
 app.use('/breweries', breweriesRoutes)
 
+// heroku config:set DB_URL="mongodb+srv://jcasado6:jcasado6@cluster0-jix1s.mongodb.net/test?retryWrites=true&w=majority"
