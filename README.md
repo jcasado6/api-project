@@ -29,8 +29,7 @@ This is an example object from the API:
 Each object represents one brewery
 
 ## Getting Started
-### Base URL: 
-// install dependencies
+[Deployed URL here](http://brewery-tracker-api.herokuapp.com/breweries)
 
 | Query | Path | Description | 
 |:--------:|:-------:| ------------|
