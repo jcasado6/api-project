@@ -1,0 +1,12 @@
+GET http://localhost:8080/breweries
+
+###
+GET http://localhost:8080/breweries/5e0fa699f6d23bcde936c698
+### 
+POST http://localhost:8080/breweries/update/5e038ea2407f7d5bae389236
+
+###
+POST http://localhost:8080/breweries/
+
+###
+DELETE   http://localhost:8080/breweries/5e0fa699f6d23bcde936c698

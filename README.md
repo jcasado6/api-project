@@ -30,15 +30,15 @@ Each object represents one brewery
 
 ## Getting Started
 ### Base URL: 
+// install dependencies
 
-
-| Query | Path | Description | Additional Information |
+| Query | Path | Description | 
 |:--------:|:-------:| ------------| ----|
-| **GET** | `/breweries` | find all breweries in the database |  |
-| **GET** | `/:id` | find by a brewery by id | |
-| **POST** | `/add` | add a new brewery to the database |  |
-| **POST** | `/update/:id` | update current brewery in the database | 
-| **DELETE** | `` |  |  |
+| **GET** | `/breweries` | find all breweries in the database 
+| **GET** | `/:id` | find by a brewery by id 
+| **POST** | `/add` | add a new brewery to the database | 
+| **POST** | `/update/:id` | update current brewery in the database  
+| **DELETE** | `/:id` | delete a brewery by id 
 
 ## Goals
 * Build an API using Express and Mongoose.
