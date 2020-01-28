@@ -62,8 +62,7 @@ breweriesRoutes.route('/update/:id').post((req, res) => {
 
 
 breweriesRoutes.route('/delete/:id').delete((req, res) => {
-    console.log(req.params.id);
-    Breweries.findByIdAndRemove(req.params.id, (err, Breweries) => {
+    Breweries.findOneAndRemove(req.params.id, (err, Breweries) => {
         console.log(Breweries);
         if (!Breweries)
             res.status(404).send("not found");
